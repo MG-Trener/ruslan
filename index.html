@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c14">
+  <meta name="description" content="Расписание уроков 1 Д класса Школы-лицея №37 имени Сырбая Мауленова. Кабинет 232. Время занятий на всю неделю.">
+  <title>1 Д · Расписание уроков</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23090c14'/%3E%3Ctext x='12' y='48' font-size='45' fill='%23a2ffc6' font-family='sans-serif'%3E1%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css?v=1">
+  <link rel="stylesheet" href="./holiday-widget.css?v=1">
+  <script src="./holiday-widget.js?v=1" defer></script>
+  <script src="./script.js?v=1" defer></script>
+</head>
+<body>
+  <div class="aura" aria-hidden="true"></div>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Расписание 1 Д"><span class="brand-icon" aria-hidden="true">▦</span> ШКОЛА-ЛИЦЕЙ <b>№37</b></a>
+      <span class="location">имени Сырбая Мауленова</span>
+    </header>
+    <section class="intro" aria-labelledby="title">
+      <div>
+        <div class="eyebrow"><span class="light"></span> УЧЕБНАЯ НЕДЕЛЯ <span class="eyebrow-divider">/</span> ПЕРВАЯ СМЕНА</div>
+        <h1 id="title">Расписание <span>1 Д</span></h1>
+      </div>
+      <span class="class-info">Кабинет 232<span>2026 / 27</span></span>
+    </section>
+    <section class="schedule-section" aria-labelledby="schedule-title">
+      <h2 id="schedule-title" class="sr-only">Расписание недели</h2>
+      <nav class="day-nav" aria-label="Выбор дня"><button class="day-button active" data-day="all" aria-pressed="true">Вся неделя</button><button class="day-button" data-day="0" aria-pressed="false">Пн</button><button class="day-button" data-day="1" aria-pressed="false">Вт</button><button class="day-button" data-day="2" aria-pressed="false">Ср</button><button class="day-button" data-day="3" aria-pressed="false">Чт</button><button class="day-button" data-day="4" aria-pressed="false">Пт</button><span class="nav-note">Время Астаны</span></nav>
+      <div id="schedule" class="week-grid"></div>
+      <div id="day-animation" class="day-animation" hidden aria-hidden="true">
+        <div class="orbit-scene">
+          <div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div>
+          <div class="orbit-core">✦</div>
+          <span class="orbit-symbol symbol-one">∑</span><span class="orbit-symbol symbol-two">Aa</span><span class="orbit-symbol symbol-three">✎</span><span class="orbit-symbol symbol-four">♫</span>
+          <div class="orbit-floor"></div>
+        </div>
+      </div>
+      <noscript><p>Для просмотра расписания включите JavaScript в браузере.</p></noscript>
+      <div class="schedule-caption"><span><span class="caption-line"></span> Начало занятий в 08:00</span><span>После уроков — время для себя <span aria-hidden="true">✦</span></span></div>
+    </section>
+    <footer><span>1 Д <span class="footer-slash">/</span> Школа-лицей №37</span><span>Расписание · 2026 / 27</span><span class="developer-credit">Разработчик: <b>Руслан Закирович</b></span></footer>
+  </main>
+  <aside id="break-card" class="break-card" role="dialog" aria-modal="false" aria-labelledby="break-title" hidden>
+    <div class="break-header"><span class="break-mascot" aria-hidden="true">😎</span><strong id="break-title">Перемена!</strong><button id="break-close" class="break-close" type="button" aria-label="Скрыть окно до следующей перемены или напоминания">×</button></div>
+    <div class="break-clock-row"><span id="break-clock" class="break-clock" role="timer" aria-label="До следующего урока" aria-live="off">00:00</span><span class="break-clock-label">до урока</span></div>
+    <p id="break-message" class="break-message" role="status" aria-live="polite">Выдохни и улыбнись!</p>
+    <div id="break-next" class="break-next"></div>
+    <div id="break-room" class="break-room"></div>
+    <div class="break-progress" aria-hidden="true"><span id="break-progress-fill"></span></div>
+  </aside>
+</body>
+</html>
