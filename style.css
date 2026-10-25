@@ -64,6 +64,7 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
 
 .class-info>.current-time{color:#b4c2bc;font-variant-numeric:tabular-nums}.current-time b{color:var(--mint);font-weight:700;letter-spacing:.3px}
+.class-info>.current-time{display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid #a2ffc65c;border-radius:9px;background:linear-gradient(135deg,#a2ffc61a,#a2ffc608);box-shadow:0 0 18px #a2ffc61c;color:#dce8e1;font-size:13px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}.current-time b{font-size:16px;letter-spacing:.8px;text-shadow:0 0 12px #a2ffc690}@media(min-width:701px){.class-info{display:flex;align-items:center;gap:16px}.class-info>span{margin-left:0}}@media(max-width:700px){.class-info>.current-time{gap:4px;padding:4px 7px;font-size:10px}.current-time b{font-size:14px}}@media(orientation:landscape) and (max-height:550px) and (max-width:1100px){.class-info>.current-time{gap:3px;padding:2px 4px;font-size:8px}.current-time b{font-size:10px}}
 
 /* School identity and credit remain visible in every timetable view. */
 .developer-credit{display:block}.developer-credit b{color:var(--mint);font-weight:600}
