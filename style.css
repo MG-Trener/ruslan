@@ -63,6 +63,8 @@
 @media(max-height:350px){.break-card{width:min(216px,calc(100vw - 24px));padding:9px 12px;border-radius:15px}.break-clock{font-size:29px}.break-header{font-size:12px}.break-mascot{font-size:21px}.break-message{font-size:11px;margin:4px 0}.break-next{font-size:10px}.break-progress{margin-top:6px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
 
+.class-info>.current-time{color:#b4c2bc;font-variant-numeric:tabular-nums}.current-time b{color:var(--mint);font-weight:700;letter-spacing:.3px}
+
 /* School identity and credit remain visible in every timetable view. */
 .developer-credit{display:block}.developer-credit b{color:var(--mint);font-weight:600}
 .location{text-align:right}.topbar{gap:12px}

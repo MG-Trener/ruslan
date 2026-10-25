@@ -65,6 +65,13 @@ let displayedState;
 const astanaClock = new Intl.DateTimeFormat('en-US', {
   timeZone: 'Asia/Almaty', weekday: 'short', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
 });
+const currentTimeClock = new Intl.DateTimeFormat('ru-RU', {
+  timeZone: 'Asia/Almaty', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+});
+function updateCurrentTime(date = new Date()) {
+  const clock = document.getElementById('current-time');
+  if (clock) clock.textContent = currentTimeClock.format(date);
+}
 function toMinutes(time) {
   const [hour, minute] = time.split(':').map(Number);
   return hour * 60 + minute;
@@ -185,6 +192,7 @@ document.querySelectorAll('.day-button').forEach(button => {
 });
 function refreshCurrentLesson() {
   const state = astanaState();
+  updateCurrentTime();
   if (state.key !== displayedState) render();
   updateBreak(state);
 }
